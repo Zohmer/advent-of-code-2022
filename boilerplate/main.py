@@ -1,11 +1,11 @@
 from inspect import cleandoc
 
 
-def puzzle1(inputStr: str):
+def puzzle1(inputList: list):
     pass
 
 
-def puzzle2(inputStr: str):
+def puzzle2(inputList: list):
     pass
 
 

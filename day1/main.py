@@ -1,17 +1,17 @@
 from inspect import cleandoc
 
 
-def puzzle1(inputStr: str):
+def puzzle1(inputList: list):
     calsPerElf = []
     i = 0
     totCals = 0
-    while i < len(inputStr):
-        totCals += int(inputStr[i])
+    while i < len(inputList):
+        totCals += int(inputList[i])
         i += 1
-        if i >= len(inputStr):
+        if i >= len(inputList):
             calsPerElf.append(totCals)
             break
-        if inputStr[i] == '':
+        if inputList[i] == '':
             calsPerElf.append(totCals)
             totCals = 0
             i += 1
@@ -24,17 +24,17 @@ def puzzle1(inputStr: str):
     return biggestSum
 
 
-def puzzle2(inputStr: str):
+def puzzle2(inputList: list):
     calsPerElf = []
     i = 0
     totCals = 0
-    while i < len(inputStr):
-        totCals += int(inputStr[i])
+    while i < len(inputList):
+        totCals += int(inputList[i])
         i += 1
-        if i >= len(inputStr):
+        if i >= len(inputList):
             calsPerElf.append(totCals)
             break
-        if inputStr[i] == '':
+        if inputList[i] == '':
             calsPerElf.append(totCals)
             totCals = 0
             i += 1
