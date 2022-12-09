@@ -2,10 +2,23 @@ from inspect import cleandoc
 
 
 def puzzle1(inputList: list):
-    pass
+    trees =  seperateTrees(inputList)
+    visable = 0
 
 
 def puzzle2(inputList: list):
+    pass
+
+
+def seperateTrees(inputList: list) -> list:
+    trees = []
+    for row in inputList:
+        treeRow = [int(tree) for tree in row]
+        trees.append(treeRow)
+    return trees
+
+
+def isTreeVisable(trees: list, treeRow, treeColumn):
     pass
 
 
@@ -18,10 +31,16 @@ def main():
         inputFile.close()
     else:
         data = cleandoc("""
-                            test data goes here
+                            30373
+                            25512
+                            65332
+                            33549
+                            35390
                         """)
 
     data = data.split("\n")
+
+    print(puzzle1(data))
 
 
 if __name__ == "__main__":
